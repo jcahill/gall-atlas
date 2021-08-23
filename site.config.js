@@ -1,51 +1,54 @@
 module.exports = {
-  // where it all starts -- the site's root Notion page (required)
-  rootNotionPageId: '78fc5a4b88d74b0e824e29407e9f1ec1',
 
-  // if you want to restrict pages to a single notion workspace (optional)
-  // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: null,
+//        webroot (req)
+  rootNotionPageId:                     '5f0f9195923a47c980a3a8ecfe2fee81',
 
-  // basic site info (required)
-  name: 'Transitive Bullshit',
-  domain: 'transitivebullsh.it',
-  author: 'Travis Fischer',
+//        limit 1 notion space
+//        Notion ID; see  /nfo
+  rootNotionSpaceId:                    null,
 
-  // open graph metadata (optional)
-  description: 'Example site description',
-  socialImageTitle: 'Transitive Bullshit',
-  socialImageSubtitle: 'Hello World! 👋',
+//        core site info (req)
+  name:                                 'Notion Blog',
+  domain:                               'jcahill.github.io',
+  author:                               'J C',
 
-  // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+//        open graph metadata
+  description:                          'Notion Blog',
+  socialImageTitle:                     'Notion Blog',
+  socialImageSubtitle:                  'Notion Blog 👋',
 
-  // default notion icon and cover images for site-wide consistency (optional)
-  // page-specific values will override these site-wide defaults
-  defaultPageIcon: null,
-  defaultPageCover: null,
-  defaultPageCoverPosition: 0.5,
+//        social handles, no @
+  twitter:                              '',
+  github:                               '',
+  linkedin:                             '',
 
-  // image CDN host to proxy all image requests through (optional)
-  // NOTE: this requires you to set up an external image proxy
-  imageCDNHost: null,
+//        site-wide elements
+//        page-specific values
+//        override the default
+  defaultPageIcon:                      null,
+  defaultPageCover:                     null,
+  defaultPageCoverPosition:             0.5,
 
-  // Utteranc.es comments via GitHub issue comments (optional)
-  utterancesGitHubRepo: null,
+//        image CDN proxy host
+//        requires image proxy
+  imageCDNHost:                         null,
 
-  // whether or not to enable support for LQIP preview images (optional)
-  // NOTE: this requires you to set up Google Firebase and add the environment
-  // variables specified in .env.example
-  isPreviewImageSupportEnabled: false,
+//        GitHub issue comment
+  utterancesGitHubRepo:                 null,
 
-  // map of notion page IDs to URL paths (optional)
-  // any pages defined here will override their default URL paths
-  // example:
-  //
-  // pageUrlOverrides: {
-  //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
-  //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-  // }
-  pageUrlOverrides: null
+//        support LQIP preview
+//        requires GC Firebase
+//        see .env.example
+  isPreviewImageSupportEnabled:         false,
+
+//   /path maps for page IDs
+//   overrides default paths
+//   example:
+//
+//   pageUrlOverrides: {
+//     '/foo':                          '067dd719a912471ea9a3ac10710e7fdf',
+//     '/bar':                          '0be6efce9daf42688f65c76b89f8eb27'
+//   }
+
+  pageUrlOverrides:                     null
 }
