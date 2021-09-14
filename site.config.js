@@ -1,21 +1,21 @@
 module.exports = {
 
 //        webroot (req)
-  rootNotionPageId:                     '5f0f9195923a47c980a3a8ecfe2fee81',
+  rootNotionPageId:                     'b7ae90100c5e47f793745c52a9d1d81b',
 
 //        limit 1 notion space
 //        Notion ID; see  /nfo
   rootNotionSpaceId:                    null,
 
 //        core site info (req)
-  name:                                 'Notion Blog',
-  domain:                               'jcahill.github.io',
-  author:                               'J C',
+  name:                                 'Gall Atlas',
+  domain:                               'gallatlas.net',
+  author:                               'Petalsmiths',
 
 //        open graph metadata
-  description:                          'Notion Blog',
-  socialImageTitle:                     'Notion Blog',
-  socialImageSubtitle:                  'Notion Blog 👋',
+  description:                          'Gall Atlas',
+  socialImageTitle:                     'Gall Atlas',
+  socialImageSubtitle:                  'Gall Atlas 👋',
 
 //        social handles, no @
   twitter:                              '',
